@@ -16,13 +16,13 @@ class Tamagotchi {
         };
 
         this.puke = () => {
-            this.health--;
-            console.log(this.name + "' health: " + this.health);
+            this.foodInTummy--;
+            console.log(this.name + "' WAHHH: " + this.foodInTummy);
         };
 
         this.yawn = () => {
             this.restedness--;
-            console.log(this.name + " restedness: " + this.restedness);
+            console.log(this.name + " has current restedness of: " + this.restedness);
         };
     }
 }
@@ -34,6 +34,9 @@ var tamTwo = new Tamagotchi("Michael", "Type B");
 var tamThree = new Tamagotchi("Jake", "Type C");
 var tamFour = new Tamagotchi("Jack", "Type D");
 
+var tamFive = new Tamagotchi("Aaron", "Type E");
+var tamSix = new Tamagotchi("Blake", "Type F");
+
 //test out your Tamagotchies below via console.logs
 
 console.log("Tamagotchi one: " + tamOne);
@@ -43,3 +46,6 @@ tamOne.cry();
 tamTwo.cry();
 tamThree.cry();
 tamFour.cry();
+
+console.log(tamFive.name());
+console.log(tamSix.name());
