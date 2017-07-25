@@ -24,8 +24,28 @@ class Tamagotchi {
             this.restedness--;
             console.log(this.name + " has current restedness of: " + this.restedness);
         };
+
+        this.start = function(){
+            console.log("Starting " + this.name);
+            var tam = this;
+            this.hungerTimer = setInterval(() => {
+            tam.cry();
+            }, 6000);
+            this.yawnTimer = setInterval(() => {
+            tam.yawn();
+            }, 10000);
+            this.sickTimer = setInterval(() => {
+            tam.puke();
+            }, 25000);
+        };
+        this.stop = function(){
+            clearInterval(this.hungerTimer);
+            clearInterval(this.yawnTimer);
+            clearInterval(this.sickTimer);
+        };
     }
 }
+
 
 //create new Tamagotchis
 var tamOne = new Tamagotchi("Danny", "Type A");
@@ -47,5 +67,5 @@ tamTwo.cry();
 tamThree.cry();
 tamFour.cry();
 
-console.log(tamFive.name());
-console.log(tamSix.name());
+console.log(tamFive.name);
+console.log(tamSix.name);
