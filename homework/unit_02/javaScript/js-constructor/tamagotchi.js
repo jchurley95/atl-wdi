@@ -5,6 +5,7 @@ class Tamagotchi {
     constructor(name, creatureType) {
         this.name = name;
         this.creatureType = creatureType;
+        this.foodInTummy = 10;
         this.restedness = 10;
         this.health = 10;
         
@@ -27,11 +28,18 @@ class Tamagotchi {
 }
 
 //create new Tamagotchis
-let tamOne = new Tamagotchi("Danny", "Type A");
-let tamTwo = new Tamagotchi("Michael", "Type B");
+var tamOne = new Tamagotchi("Danny", "Type A");
+var tamTwo = new Tamagotchi("Michael", "Type B");
 
+var tamThree = new Tamagotchi("Jake", "Type C");
+var tamFour = new Tamagotchi("Jack", "Type D");
 
 //test out your Tamagotchies below via console.logs
 
 console.log("Tamagotchi one: " + tamOne);
 console.log("Tamagatchi two: " + tamTwo);
+
+tamOne.cry();
+tamTwo.cry();
+tamThree.cry();
+tamFour.cry();
