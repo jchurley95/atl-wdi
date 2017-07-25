@@ -5,6 +5,13 @@ var User = require("../models/user");
 var Item = require("../models/item");
 
 // USERS INDEX ROUTE
+router.get('/', (req, res) => {
+    
+console.log('yo');
+
+res.send('yo');
+
+})
 
 // USER SHOW ROUTE
 
