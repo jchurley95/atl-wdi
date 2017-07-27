@@ -1,5 +1,6 @@
 console.log('Tamagotchi file is loaded');
 
+<<<<<<< HEAD
 //your constructor function here
 class Tamagotchi {
     constructor(name, creatureType) {
@@ -45,6 +46,9 @@ class Tamagotchi {
         };
     }
 }
+=======
+//your class declaration here
+>>>>>>> dfc25dec9179348944ba88a6693cbad522807bd1
 
 
 //create new Tamagotchis
