@@ -123,8 +123,14 @@ a:visited{
   padding: 5px;
 }
 
+.fix-menu {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
 /* Locations styles  */
-#locations h1{
+.locations-title{
   font-family: 'Permanent Marker', cursive;
   color: white;
   text-shadow: 1px 2px 2px #000;
@@ -156,3 +162,4 @@ a:visited{
 .contact{
   color: rgba(255,255,255,.85);
 }
+

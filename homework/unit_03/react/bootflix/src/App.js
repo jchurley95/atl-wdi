@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Search from './components/Search';
 import Movie from './components/Movie';
 import example from './omdbExample.json'
+import axios from 'axios';
 
 class App extends Component {
   constructor(){
@@ -13,12 +14,23 @@ class App extends Component {
   }
 
   //Update these methods to make axios calls to OMDB and update this.state.movie with the response from the server
-  _searchByTitle = () => {
-    console.log("Search by Title");
+  _searchByTitle = (req) => {
+    axios.get("http://www.omdbapi.com/?t="+req)
+      .then((res) => {
+
+        const movie = res.data;
+        console.log("movie is " + movie);
+        this.setState({movie: movie});
+      })
   }
 
-  _searchById = () => {
-    console.log("Search by ID");
+  _searchById = (req) => {
+    axios.get("http://www.omdbapi.com/?i="+req)
+      .then((res) => {
+        const movie = res.data;
+        console.log("movie is " + movie);
+        this.setState({movie: movie});
+      })
   }
 
   //Pass _searchByTitle, _searchById, and this.state.movie to it's appropriate child components.
@@ -26,8 +38,8 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Search />
-        <Movie />
+        <Search searchByTitle={this._searchByTitle} searchById={this._searchById}/>
+        <Movie movie={this.state.movie}/>
       </div>
     );
   }
