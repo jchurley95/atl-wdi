@@ -23,53 +23,68 @@ Answer should be no more than a couple of sentences. Refer to the reading.
 1. According to Metz, what is Object-oriented design about?
 
 ```
-Your Answer Here
+Programs are made up of parts that interact to produce the behavior of the whole, these parts are called objects, and these interactions are messages passed between them. Object-oriented design is about managing these dependencies.
 ```
 
 2. What does SOLID stand for?
 
 ```
-Your Answer Here
+SOLID:
+    Single Responsibility
+    Open-Closed
+    Liskov Substitution
+    Interface Segregation
+    Dependency Inversion
+
+Similar to DRY
 ```
 
 3. Ruby is a class-based object-oriented language. What does that mean?
 
 ```
-Your Answer Here
+Combining data and behaviors into a single object, you can then define a class that provides a blueprint for the construction of similar objects.
 ```
 
 4. Where are methods defined in Ruby?
 
 ```
-Your Answer Here
+Invoked in response to messages, these are definitions of object behavior.
 ```
 
 5. Why does single Responsibility matter?
 
 ```
-Your Answer Here
+Classes with more than one responsibility are difficult to reuse. The process of getting only the parts you need is impossible. Duplicating the code in response to this leads to more maintenance and more bugs. 
 ```
 
 6. What does `attr_reader` do?
 
 ```
-Your Answer Here
+Allows succeeding classes to inherit attributes of preceding classes, such as a RoadBike class inheriting the size from a Bicycle class. RoadBike is a subclass of Bicycle.
 ```
 
 7. What are 4 benefits Metz outlines for methods that have a single responsibility?
 
 ```
-Your Answer Here
+Expose previously hidden qualities
+Avoid the need for comments
+Encourage reuse
+Easy to move to another class
 ```
 
 8. What are 4 things an object knows when it has a dependency?
 
 ```
-Your Answer Here
+The name of another class
+The name of a message that it intends to send to someone other than self (methods on other objects)
+The arguments that a message requires
+The order of those arguments
 ```
 
 9. Dependency management is core to creating future-proof applications. What does injecting dependencies and isolating dependencies do? What are their benefits?
 
 ```
-Your Answer Here
+injecting dependencies is when one object supplies the dependencies of another object, which allows the class to make acquiring dependencies something else's problem and upholds the idea of single responsibility.
+
+isolating dependencies involves isolating unneccessary dependencies when you cannot remove them. It's like giving the class an immune system, which protects it from vulnerabilities coming from foreign dependencies that may otherwise break the code.
 ```

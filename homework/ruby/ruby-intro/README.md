@@ -20,11 +20,11 @@
 
 Write down any questions you still have about Ruby:
 
-  1. Your Question Here
-  2. Your Question Here
-  3. Your Question Here
-  4. Your Question Here
-  5. Your Question Here
+  1. Not sure
+  2. Not sure
+  3. Not sure
+  4. Not sure
+  5. Not sure
 
 ### Recommended readings and references:
   - [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide)
