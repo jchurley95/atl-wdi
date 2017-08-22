@@ -114,6 +114,17 @@ end
 
 puts sum.to_s
 
+# 10
 
+def check_prime? (input)
+    return Prime.instance.prime?(input)
+end
 
+check_prime?(5)
 
+def get_primes (limit)
+    Prime.each(limit) do |prime|
+        p prime
+end
+
+# def get_primes (limit)
