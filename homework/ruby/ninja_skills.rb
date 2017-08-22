@@ -37,15 +37,15 @@ puts g.to_i + gToNumber
 
 # 5
 
-puts "Enter an integer"
-num = gets
-puts num.to_i * 2
+# puts "Enter an integer"
+# num = gets
+# puts num.to_i * 2
 
-puts "What do they call you, young samurai?"
-name = gets
-puts "Whatcha up to in your free time?"
-whatTheyUpTo = gets
-puts "#{name} does #{whatTheyUpTo}"
+# puts "What do they call you, young samurai?"
+# name = gets
+# puts "Whatcha up to in your free time?"
+# whatTheyUpTo = gets
+# puts "#{name} does #{whatTheyUpTo}"
 
 # 6
 
@@ -75,5 +75,45 @@ puts myFavoriteAnimals
 favoriteMovie = {}
 favoriteMovie["movie"] = "Harambe probably had a favorite movie"
 puts "My favorite movie is " + favoriteMovie["movie"]
+
+# 8
+
+firstRange = (1..10)
+firstRange = firstRange.to_a
+puts firstRange.to_s
+
+secondRange = (1...1000)
+secondRange = secondRange.to_a
+puts secondRange
+
+for number in firstRange do
+    number.to_s 
+    p number
+end 
+
+x = 0
+
+while x < 50 do 
+   p  secondRange[x]
+   x += 1
+end 
+
+# 9
+
+sum = 0
+y = 0
+
+while y < 1000 do 
+    if y % 3 == 0 then
+        sum += y
+    elsif y % 5 == 0 then 
+        sum += y
+    end
+    y += 1
+end
+
+puts sum.to_s
+
+
 
 
