@@ -46,3 +46,17 @@ name = gets
 puts "Whatcha up to in your free time?"
 whatTheyUpTo = gets
 puts "#{name} does #{whatTheyUpTo}"
+
+# 6
+
+myFirstArray = []
+myFirstArray = ["one", "two", "three", "four", "five", 1, 2, 3, 4]
+puts myFirstArray.to_s
+puts myFirstArray[-1]
+puts myFirstArray[0]
+puts myFirstArray[1] = "Joe"
+puts myFirstArray[2] = 3
+myFirstArray << true
+puts myFirstArray.to_s
+puts myFirstArray[3].class
+
