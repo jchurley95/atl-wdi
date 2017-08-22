@@ -60,3 +60,20 @@ myFirstArray << true
 puts myFirstArray.to_s
 puts myFirstArray[3].class
 
+# 7
+
+myFavoriteAnimals = { 
+    "Rookie" => "Dog", 
+    "Edgar" => "Donkey", 
+    "Sarah" => "Horse", 
+    "Sputnik" => "Bear", 
+    "Buddy" => "Shark"
+}
+myFavoriteAnimals['Edgar'] = "Bear"
+puts myFavoriteAnimals
+
+favoriteMovie = {}
+favoriteMovie["movie"] = "Harambe probably had a favorite movie"
+puts "My favorite movie is " + favoriteMovie["movie"]
+
+
